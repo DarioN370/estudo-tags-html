@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+       <style>
+       mark {
+            background-color: green
+        }
+        </style>
+    
+    <!-- 
+        Dei uma brincada com a cor com o comando style, escrevi body, indicando onde vai se aplicar as tags, e coloquei o que quero fazer, no caso, background color 
+    -->
+    <style>
+        body{
+            background-color: rgb(172, 172, 157);
+        }
+    </style>
+    <title>BLOCAO DE NOTAS</title>
+</head>
+<body>
+    <h1>Isso serve para titulos nas paginas</h1> <!--H1...H6 não é tamanho-->
+    <h2>Esse H2 cria um subtitulo</h2>
+
+     <p>
+        isso adiciona um paragrafo <!--Paragrafo-->
+    </p> 
+
+    <hr>
+
+    <p>
+        &uarr;e essa é uma linha horizontal normal para qualquer coisa&uarr;
+    </p>
+    
+    <p>
+        se precisar quebrar o texto em algum lugar especifico <br> como esse, voce usa essa tag &lt;br&gt;.<!--Less than (lt) / Greater than (gt) vai uasr ele pra nao contar como sigla e sim como texto-->
+        <hr>
+    </p>
+
+    <p>
+        Vamos adicionar alguns simbolos especiais<!--Cada simbolo vai ter o seu codigo especifico, entao vai depender, tem que achar no site la-->
+        &reg; 
+        &copy;
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &Delta;
+        &uarr; <!--Seta uper arrow-->
+    </p>
+
+        <hr>
+
+    <p>
+        Vamos adicionar alguns emojis:<!--Lembra de colocar o codigo certo para cada emoji, se não vai dar errado-->
+        &#x1F596;
+        &#x1F913;
+    </p>
+        <hr>
+<h1> Agora vamos começar a organizar imagens</h1> <!--USAR GIMP PRA EDITAR AS IMAGENS QUANDO PRECISAR-->
+    <p>
+    Abaixo vc vai ver uma imagem que esta na mesma pasta 
+    </p>
+    <img src="html-200.webp" alt="Logo HTML5"> <!---Imagem de uma pasta minha-->
+
+    <p>
+        tambem podemos carregar imagens externas, mas sem alterar o tamanho, por isso ela vai travar na hora de carregar
+    </p>
+<img src="https://www.freepnglogos.com/uploads/javascript-png/js-logo-png-5.png" alt="Logo JavaScript"> <!--Link URL-->
+
+<hr>
+<h1>Agora vamos aos favicons</h1>
+
+<p>
+    favicons sao aqueles icones do site ao lado do nome  
+    <!--ESTA NA LINHA DE CODIGO 7-->
+</p>
+    <hr>
+
+<h1>Exemplo de Tag &lt;address&gt;: <br> que significa endereço </h1>
+ <p>
+    Eu moro na <address> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ad quos est quibusdam fugit, earum, magni facilis neque consectetur vel excepturi quisquam ullam, possimus dolor quo! Fuga possimus autem cumque. </address> 
+    <!--Esse address significa endereço, vi esse exemplo na aula de semantica -->
+ </p>
+
+ <h1>Principais Formatações de texto</h1>
+ <!--Negrito e Italico do jeito certo kkkkkk Prof Gugu quase coringou na aula...-->
+
+ <!--LEMBRAR  QUE NEGRITO E ITÁLICO É PARA FORMA, E FORMA É COISA DE CSS3, E ISSO É HTML5-->
+ 
+ <h2>Negrito / Destaque</h2> 
+ <!--Usar sempre com semantica, pois ela vai dar Destaque, ou seja, é o sentido certo-->
+ <p>
+    Nessa frase <b>Tenho um termo em negrito</b> usando a tag B (Não semantica)
+</p>
+<p>
+    Nessa frase <strong> Tenho um termo em negrito</strong> usando a tag STRONG (semantica)
+</p>
+
+<h2>Itálico / Ênfase</h2> 
+<!--Usar sempre com semantica, pois ela vai dar enfase, ou seja, é o sentido certo-->
+<p>
+    Nesta frase, temos um <i>termo em italico</i> usando a tag I (Não semantica)
+</p>
+
+<p>
+    Nesta frase temos um <em>termo em ênfase</em> usando a tag EM (semantica)
+</p>
+ 
+ <h2>Texto marcado</h2>
+ <p>
+    Podemos criar tambem um <mark>texto marcado </mark> usando a tag MARK. <!--Mudar a cor é css IMPORTANTE LEMBRAR-->
+ </p>
+
+ <p>
+ E no outro paragrafo, temos <mark>outro texto marcado</mark>
+ </p>
+<!--PARA CRIAR UMA COR PARA TODOS OS MARKS PRA SEMPRE, VC CRIA LA EM CIMA NA CABEÇA, COLOCA STYLE, DPS MARK {}E DENTRO PEDE UM BACKGROUND COLOR E ESCOLHE A COR-->
+
+<h2>Texto grande e pequeno</h2>
+<p>
+    Estamos criando um <big> texto grande</big> e um <small> texto pequeno </small> nesse paragrafo
+</p>
+
+<h2>Texto deletado</h2>
+<p>
+    Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado
+    <!--Vai criar um risco em cima do texto que eesta dentro das tags-->
+</p>
+
+<h2>Texto inserido</h2>
+<p>
+    Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfasee indicar que ele foi adicionado depois.
+    <!--esse é o jeito certo de sublinhar um texto (ex: insira aqui seu nome)-->
+</p>
+ 
+<h2>Texto sobrescrito</h2>
+<p>
+    para inserir coisas do tipo x<sup>20</sup>+3
+    <!--sup é em cima-->
+</p>
+
+<h2>Texto subscrito</h2>
+<p>
+  Para inserir coisas tipo H<sub>2</sub>O 
+  <!--SUB é embaixo-->
+</p>
+
+<h1>Outras formatações</h1>
+<h2>Código-fonte / Pré-formatação</h2>
+<p>
+    O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.
+</p>
+<!--Relaxa que esse de cima e o de baixo é bagulho mais estetico do que tudo-->
+<pre>
+    <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é Ímpar')
+    print('Fim do programa')
+    </code>
+</pre>
+    
+    <h2>Citações</h2> <!--Envelopa e usa a tag 'Q' pq ele da sentido de citação na tradução é quote--> 
+    <p>
+        Como diria o pai de um amigo: <q>o computador é um burro múito rapido</q>
+    </p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote> <!--Poderia colocar dentro desse 'blockquote' uma tag de 'cite' que indica que é uma citação, e colar o link do lugar, ele nao faz nada no front da minha pagina mas os mecanismos de busca iriam saber que eu dei os direitos autorais para quem escreveu o que eu estou citando e nao tomar um web3 strike kakakkakkakakkakakaka... nao botei pq da trabalho e to no meio da aula-->
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capitulo descrevem os blocos de texto.
+    </blockquote>
+
+<h2>Abreviações</h2> <!--A TAG 'ABBR' serve para eu poder abreviar no front mas quando eu parar o mouse em cima da abreviação ele vai mostrar pra mim o que eu abreviei-->
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+
+<h2>Texto invertido</h2> <!--Usa a tag 'BDO' para criar coisas invertidas kkkkkkkk, o mais inutil, RTL= right to left, LTR= left to right-->
+<p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+
+<h1>Trabalhando com listas</h1>
+<h2>Listas ordenadas</h2> <!--OL = Lista ordenada-->
+<!--Temos as outras tags para personalizar as listas ordenadas, vou dar alguns exemplos, vc coloca dentro da tag 'ol' o comando type, e escolhe qual vai querer que seja o icone de contagem da lista, e pode colocar o comando start='x' e escolher em qual numero ela vai começar-->
+<ol type="1">
+    <li>Acordar</li> <!--Usa a tag 'LI' para icon list, ou seja, item da lista-->
+    <li>Tomar café</li>
+    <li>Escovar os dentes</li>
+    <li>Ir para facul</li>
+    <li>Almoçar</li>
+    <li>Ir para o trabalho</li>
+    <li>Voltar para casa</li>
+    <li>Jantar</li>
+    <li>Dormir</li>
+</ol>
+
+<h2>Listas não ordenadas</h2> <!--Unorded list = UL -->
+<!--Tags de design 'circle, disc, square' (sempre dentro do type)-->
+<ul>
+<li>pão</li>
+<li>Leite</li>
+<li>Agua</li>
+</ul>
+
+<h1>Listas mistas e de definição</h1>
+<h2>Minhas linguagens favoritas</h2>
+<ol>
+    <li>Antigas</li>
+    <ol type="a"> <!--O nome disso aqui embaixo é ANINHAMENTO, quando ce meio que faz um ninho mesmo, juntando varias listas com sublistas, da pra fazer OL e tambem com UL)-->
+        <li>Cliper</li>
+        <li>Visual Basic</li>
+        <li>Python</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a">
+        <li>Python</li>
+        <li>JavaScript</li>
+    </ol>
+</ol>
+
+<h2>Lista de Definições</h2>
+
+<dl> <!--Definition List, lista de definição, vou mostrar e embaixo vai ter um exemplo pratico -->
+<dt>Termo</dt>
+<dd>Descrição</dd>
+</dl>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação do conteudo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+</dl>
+
+<h1>Links e Âncoras em HTML5</h1> <!-- A= ancora, mas se vc só colocar a tag ele vai fechar tua guia pra abrir outra -->
+<p>Você pode acessar o <a href="https://www.twitch.tv/gaules" target="_blank" rel="external">canal da tribo na twitch</a></p>
+<p>Você tambem pode acessar o canal de <a href="https://www.youtube.com/@AleAPOKA" target="_blank" rel="external" >analises do apoka no YouTube</a>
+    <!--O target significa alvo, ou seja ele vai ter um alvo em _blank, que é uma janela em branco... E o rel significa que é um link relativo ao externo, ou seja, vai pra fora do meu site-->
+
+<h1>Links internos</h1>
+<p>Esta é a primeira pagina do site, se você quiser, pode acessar tambem a minha <a href="pag002.html" rel="next">segunda pagina</a></p>
+
+<p>Voce tambem pode acessar a nossa <a href="Noticias/pag003.html" rel="next"> página de noticias</a></p>
+
+<h1>Links para downloads</h1>
+<ul>
+    <li><a href="teste-pdf/apostila.pdf.pdf">Baixar a apostila em pdf</a></li> <!--Criei uma lista para colocar varios links de downloads, o certo é antes de ter o arquivo que vai querer baixar, ce coloca um # na sua ref pra saber que ali vai um link-->
+    <li><a href="teste-pdf/apostila.zip.zip" type="application/zip">Apostila compactada em ZIP</a></li> <!--Esse type serve para mostrar para o navegador qual o tipo de arquivo-->
+</ul>
+
+<h1>Desafio 005, TAGS EM HTML5</h1>
+
+<p>Em HTML5, podemos inserir os elementos da lista a seguir. Passe o mouse em cima dos termos para descobrir qual tag deverá utilizar em cada caso</p>
+
+<ul>
+    <li><abbr title="tag p">Paragrafos</abbr></li>
+
+    <li><abbr title="tag title">Titulos</abbr></li>
+
+    <li><abbr title="tag img">Imagens</abbr></li>
+
+    <li><abbr title="tag abbr">Abreviações</abbr></li>
+
+    <li><abbr title="tag code">Códigos-fonte</abbr></li>
+
+    <li><abbr title="tag ol">Lista marcada</abbr></li>
+
+    <li><abbr title="tag ul">Lista com demarcações</abbr></li>
+</ul>
+
+<h1>Imagens dinamicas</h1>
+<h2>"Esta aula esta na pasta teste de imagens"</h2>
+
+<h1>Colocando áudio no seu site</h1>
+<p>Vamps aprender a reproduzir audios em HTML5</p>
+<!--Controls abre o controle de audio, e o autoplay é pra autoplay-->
+<!--   MP3-WAV-OGG  -->
+<audio preload="metadata" controls loop> 
+<source src="SnapInsta.io - VIZÃO DE CRIA 3 - Anezzi, Caio Luccas, PJ HOUDINI, Filipe Ret, Maneirinho, L7NNON, Cabelinho,Dallass (128 kbps).mp3" type="audio/mpeg"> <!--Usa esse pra audio-->
+<p>Pode baixar tambem. <a href="SnapInsta.io - VIZÃO DE CRIA 3 - Anezzi, Caio Luccas, PJ HOUDINI, Filipe Ret, Maneirinho, L7NNON, Cabelinho,Dallass (128 kbps).mp3">Baixar</a></p>
+</audio>
+
+<h1>Agora vamos de video hospedado no meu server</h1>
+<!--HandBrake serve pra converter videos, mudar formato etc...-->
+
+<video controls>
+<source src="tigas-atrasado.mp4" type="">
+</video>
+
+<h1>Agora aqui é um video com hospedagem externa"Youtube"</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bYl7N4U-JMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!--Para videos privados ou abertas tipo pra assinantes, no vimeo, mas é pago-->
+
+
+
+
+
+
+</body>
+</html>
+
+</body>
+</html>
